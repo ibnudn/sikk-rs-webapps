@@ -1,0 +1,31 @@
+.bg-teal-200 {
+  background-color: #a6e9d5;
+}
+
+.card .bg-teal-200 {
+  background-color: #a6e9d5;
+}
+
+.bg-teal-700 {
+  background-color: #13795b;
+}
+
+.bg-blue-200 {
+  background-color: #9ec5fe;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #0dcaf0;
+}
+
+.nav-pills .nav-link {
+  color: #032830;
+  border-radius: 0.25rem;
+}
+
+.display-6 {
+  font-weight: 400;
+}
+/*# sourceMappingURL=custom.css.map */

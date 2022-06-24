@@ -1,0 +1,33 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+.bg-teal-200 {
+  background-color: $teal-200;
+}
+.card .bg-teal-200 {
+  background-color: $teal-200;
+}
+.bg-teal-700 {
+    background-color: $teal-700;
+}
+
+.bg-blue-200 {
+  background-color: $blue-200;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: $cyan-500;
+}
+
+.nav-pills .nav-link {
+   color: $cyan-900;
+   border-radius: 0.25rem;
+}
+
+.display-6 {
+  font-weight: 400;
+}
