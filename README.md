@@ -25,5 +25,7 @@ Aplikasi SIKK-RS pada [frontend]() merupakan aplikasi yang diperuntukkan bagi ma
 - Melihat ketersediaan kamar rumah sakit di setiap faskes yang memiliki kelas yang sama.
 
 ## LINK
-- [Backend](http://m3118039.mhs.d3tiuns.com/v2)
-- [Frontend](http://m3118039.mhs.d3tiuns.com/sikk-rs)
+| Aplikasi | Link |
+| ------ | ------ |
+| Backend | [http://m3118039.mhs.d3tiuns.com/v2](http://m3118039.mhs.d3tiuns.com/v2) |
+| Frontend | [http://m3118039.mhs.d3tiuns.com/sikk-rs](http://m3118039.mhs.d3tiuns.com/sikk-rs) |
