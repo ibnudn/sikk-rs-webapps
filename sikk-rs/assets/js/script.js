@@ -149,10 +149,10 @@ function modalFaskes(_nama, _alamat, _website, _koordinat) {
                 )
             );
             });
-			$('#modal').on('shown.bs.tab', function () {
-				map.invalidateSize();
-				map.removeLayer(marker);
-			})
+			// $('#modal').on('shown.bs.tab', function () {
+			// 	map.invalidateSize();
+			// 	map.removeLayer(marker);
+			// })
             $('#modal').modal('show');
         }
     });
@@ -222,6 +222,16 @@ function mapFaskes(_nama, _alamat, _website, _koordinat) {
     }).addTo(map);
 	
     marker = new L.marker([latitude, longitude]).addTo(map);
-	map.addLayer(marker);
-	marker.bindPopup(popup).openPopup();
+	// map.addLayer(marker);
+	// marker.bindPopup(popup).openPopup();
+	$('#modal').on('shown.bs.modal', function () {
+		map.removeLayer(marker);
+		setTimeout(() => {
+			map.invalidateSize();
+		}, 100);
+		setTimeout(() => {
+			map.addLayer(marker);
+			marker.bindPopup(popup).openPopup();
+		}, 100);
+	})
 }
