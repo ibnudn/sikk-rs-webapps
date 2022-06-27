@@ -3,8 +3,6 @@ Sistem Informasi Ketersediaan Kamar Rumah Sakit di Surakarta.
 _Hospital Room Availability Information System in Surakarta._
 
 ## Fitur
-Aplikasi berbasis web ini dibangun dengan menggunakan framework [Codeigniter 3](https://www.codeigniter.com/)
-_This web-based application is built using the [Codeigniter 3](https://www.codeigniter.com/) framework_
 ### Backend (v2)
 Aplikasi SIKK-RS pada backend([v2]()) merupakan aplikasi yang diperuntukkan bagi admin dan/atau pegawai fasilitas kesehatan untuk melakukan manajemen data pada tiap fasilitas kesehatannya.
 _The SIKK-RS application on the backend([v2]()) is an application intended for admins and/or health facility employees to manage data at each health facility._
@@ -38,6 +36,15 @@ _The SIKK-RS application on [frontend]() is an application intended for the gene
 - _View the availability of hospital rooms in each class in the selected health facility,_
 - Melihat ketersediaan kamar rumah sakit di setiap faskes yang memiliki kelas yang sama.
 - _View the availability of hospital rooms in each health facility that has the same class._
+
+## Teknologi (_Tech_)
+Aplikasi berbasis web ini dibangun dengan menggunakan framework [Codeigniter 3](https://www.codeigniter.com/)
+_This web-based application is built using the [Codeigniter 3](https://www.codeigniter.com/) framework_
+- [Codeigniter 3](https://www.codeigniter.com/) - _PHP Framework_
+- [Bootstrap](https://getbootstrap.com/) - _CSS Framework_
+- [SB Admin 2](https://startbootstrap.com/theme/sb-admin-2) - _Web app admin theme_
+- [Leaflet](https://leafletjs.com/) - _Javascript Map Library_
+- [chriskacerguis/codeigniter-restserver](https://github.com/chriskacerguis/codeigniter-restserver) - _RESTful server implementation for CodeIgniter_
 
 ## LINK
 | Aplikasi | Link |
