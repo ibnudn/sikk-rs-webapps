@@ -45,7 +45,7 @@ function faskes() {
 		
         $('#isi-faskes-tab').append(`
 		<div class="col-md-4">
-		    <div class="card mb-3" onclick="modalFaskes('` + data.nama + `', '` + data.alamat + `', '` + data.website + `', '` + data.koordinat + `')">
+		    <div class="card pointer mb-3" onclick="modalFaskes('` + data.nama + `', '` + data.alamat + `', '` + data.website + `', '` + data.koordinat + `')">
 		        <div class="card-body">
 		            <h1 class="card-title">` + data.tersedia + `</h1>
 		            <p class="card-text">Kamar Tersedia</p>
@@ -82,21 +82,21 @@ function kelas() {
         
         $('#isi-kelas-tab').append(`
 		<div class="col-md-4">
-		<div class="card  mb-3" onclick="modalKelas('`+data.kelas+`')">
-		<div class="card-body">
-		<h1 class="card-title">`+data.tersedia+`</h1>
-		<p class="card-text">Kamar Tersedia</p>
-		<h1 class="card-text display-6">`+data.kelas+`</h1>
-		</div>
-		<div class="card-footer">
-		<h6 class="card-subtitle mb-2 text-muted text-center">`+bulat+`% kamar tersedia dari `+data.kapasitas+` kamar</h6>
-		<div class="progress">
-		<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: `+persen+`%"></div>
-		</div>`+ ((data.updated_at != null) ? 
-		`<p class="card-subtitle mt-2 fs-7 fw-light text-muted text-center">Update terakhir ` +  showElapsedTime(Date.parse(data.updated_at)) + ` yang lalu</p>
-		</div>
-		</div>
-		</div>` 
+			<div class="card pointer mb-3" onclick="modalKelas('`+data.kelas+`')">
+				<div class="card-body">
+					<h1 class="card-title">`+data.tersedia+`</h1>
+					<p class="card-text">Kamar Tersedia</p>
+					<h1 class="card-text display-6">`+data.kelas+`</h1>
+				</div>
+				<div class="card-footer">
+					<h6 class="card-subtitle mb-2 text-muted text-center">`+bulat+`% kamar tersedia dari `+data.kapasitas+` kamar</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: `+persen+`%"></div>
+					</div>`+ ((data.updated_at != null) ? 
+						`<p class="card-subtitle mt-2 fs-7 fw-light text-muted text-center">Update terakhir ` +  showElapsedTime(Date.parse(data.updated_at)) + ` yang lalu</p>
+					</div>
+				</div>
+			</div>` 
 		: `<p class="card-subtitle mt-2 fs-7 fw-light text-muted text-center">Update terakhir ` +  showElapsedTime(Date.parse(data.created_at)) + ` yang lalu</p>
 		</div>
 		</div>
@@ -149,10 +149,10 @@ function modalFaskes(_nama, _alamat, _website, _koordinat) {
                 )
             );
             });
-			$('#modal').on('shown.bs.tab', function () {
-				map.invalidateSize();
-				map.removeLayer(marker);
-			})
+			// $('#modal').on('shown.bs.tab', function () {
+			// 	map.invalidateSize();
+			// 	map.removeLayer(marker);
+			// })
             $('#modal').modal('show');
         }
     });
@@ -222,6 +222,16 @@ function mapFaskes(_nama, _alamat, _website, _koordinat) {
     }).addTo(map);
 	
     marker = new L.marker([latitude, longitude]).addTo(map);
-	map.addLayer(marker);
-	marker.bindPopup(popup).openPopup();
+	// map.addLayer(marker);
+	// marker.bindPopup(popup).openPopup();
+	$('#modal').on('shown.bs.modal', function () {
+		map.removeLayer(marker);
+		setTimeout(() => {
+			map.invalidateSize();
+		}, 100);
+		setTimeout(() => {
+			map.addLayer(marker);
+			marker.bindPopup(popup).openPopup();
+		}, 100);
+	})
 }
