@@ -4,8 +4,8 @@ _Hospital Room Availability Information System in Surakarta._
 
 ## Fitur
 ### Backend (v2)
-Aplikasi SIKK-RS pada backend([v2]()) merupakan aplikasi yang diperuntukkan bagi admin dan/atau pegawai fasilitas kesehatan untuk melakukan manajemen data pada tiap fasilitas kesehatannya.
-_The SIKK-RS application on the backend([v2]()) is an application intended for admins and/or health facility employees to manage data at each health facility._
+Aplikasi SIKK-RS pada backend([v2](https://gitd3ti.vokasi.uns.ac.id/ibnudn/m3118039-webapps/-/tree/main/v2)) merupakan aplikasi yang diperuntukkan bagi admin dan/atau pegawai fasilitas kesehatan untuk melakukan manajemen data pada tiap fasilitas kesehatannya.
+_The SIKK-RS application on the backend([v2](https://gitd3ti.vokasi.uns.ac.id/ibnudn/m3118039-webapps/-/tree/main/v2)) is an application intended for admins and/or health facility employees to manage data at each health facility._
 #### Admin
 - Manajemen data user,
 - _User data management,_
@@ -24,8 +24,8 @@ _The SIKK-RS application on the backend([v2]()) is an application intended for a
 - _Availability data management of chosen health facility._
 
 ### Frontend
-Aplikasi SIKK-RS pada [frontend]() merupakan aplikasi yang diperuntukkan bagi masyarakat umum untuk memantau ketersediaan kamar rumah sakit yang ada di Kota Surakarta. Fitur yang tersedia pada frontend meliputi :
-_The SIKK-RS application on [frontend]() is an application intended for the general public to monitor the availability of hospital rooms in Surakarta City. The features available on the frontend include:_
+Aplikasi SIKK-RS pada [frontend](https://gitd3ti.vokasi.uns.ac.id/ibnudn/m3118039-webapps/-/tree/main/sikk-rs) merupakan aplikasi yang diperuntukkan bagi masyarakat umum untuk memantau ketersediaan kamar rumah sakit yang ada di Kota Surakarta. Fitur yang tersedia pada frontend meliputi :
+_The SIKK-RS application on [frontend](https://gitd3ti.vokasi.uns.ac.id/ibnudn/m3118039-webapps/-/tree/main/sikk-rs) is an application intended for the general public to monitor the availability of hospital rooms in Surakarta City. The features available on the frontend include:_
 - Melihat ketersediaan kamar rumah sakit berdasarkan faskes,
 - _View the availability of hospital rooms based on health facilities,_
 - Melihat ketersediaan kamar rumah sakit berdasarkan kelas,
