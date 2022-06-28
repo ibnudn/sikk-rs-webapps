@@ -51,3 +51,11 @@ _This web-based application is built using the [Codeigniter 3](https://www.codei
 | ------ | ------ |
 | Backend | [http://m3118039.mhs.d3tiuns.com/v2](http://m3118039.mhs.d3tiuns.com/v2) |
 | Frontend | [http://m3118039.mhs.d3tiuns.com/sikk-rs](http://m3118039.mhs.d3tiuns.com/sikk-rs) |
+
+### Login Info
+| Username | Password | Role |
+| ------ | ------ | ------ |
+| admin | adminuns | Admin |
+| dinkes | dinkes | Admin |
+| moewardi | moewardi | Pegawai |
+| banyuanyar | banyuanyar | Pegawai |
